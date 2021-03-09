@@ -13,7 +13,8 @@ function reducer(state,action){
 }
 
 export default function App() {
-  const[state,dispatch] = useReducer(reducer , {count : 0 , step : 0});
+
+  const[state,dispatch] = useReducer(reducer , {count : 0 , step : 0} );
 
   useEffect(()=> {
     const id = setInterval(()=> dispatch({type : 'untick'}),1000);
